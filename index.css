@@ -1,0 +1,152 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+@import url(https://fonts.googleapis.com/css?family=Cutive+Mono);
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /*font-family: 'Press Start 2P', cursive;*/
+    font-family: 'Share Tech Mono', monospace;
+    background:#7a7a7a; 
+
+}
+
+
+
+
+.blink_me {
+  animation: blinker 1s linear infinite;
+  padding-right: 20px;
+  color: #def7ff;
+ }
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+ }
+
+/*---------------Title-line----------------*/
+
+.tag{
+    text-align: center; 
+    font-size: 70px;
+    font-family: 'Special Elite', cursive;
+
+}
+
+
+/*-------x--------Title-line--------x--------*/
+
+
+/*--------------intro para---------------*/
+
+.intro-para{
+    /*font-family: 'Press Start 2P', cursive;*/
+    font-family: 'VT323', monospace;
+    /*font: 16px/20px 'Cutive Mono', serif;*/
+    font-size: 200%;
+    color: #008F11;
+    overflow: none;
+}
+
+
+a {
+  color: #222;
+}
+
+.wrap {
+  width: 500px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.test {
+  margin-top: 10px;
+  text-align: left;
+}
+  
+
+
+/*---------x-----intro para--------x-------*/
+
+/*----------------block2 background-----------------*/
+
+.block2{
+    background-color: #7a7a7a;
+}
+
+/*----------------end block2-----------------*/
+
+
+.logo{
+width:30%;
+}
+.logo>img{
+    margin-top:30px;
+    margin-left:5vw;
+    width:80%;
+    height:auto;
+    border-radius: 15px;
+}
+.content{
+    padding: 10px;
+    margin-left: 20px;
+    margin-top:30px;
+    width: 60%;
+    color: white;
+    overflow:auto;
+    height: auto;
+}
+.content h1{
+    color: cyan;
+}
+
+.box{
+display:flex;
+flex-direction: row;
+background-color: #030403;
+height:auto;
+width: 100%;
+}
+
+@media (max-width:600px)
+{
+    .box{
+        display: block;
+        margin:0;
+        overflow-y: auto;
+    }
+    .logo{
+        margin:0;
+    }
+    .logo img{
+        position: relative;
+        left:85%;
+        align-self: center;
+    }
+    .content{
+        margin:0;
+        width:95vw;
+        padding: 10px;
+
+
+    }
+    .content h1{
+        text-align: center;
+    }
+}
+
+
+/*@media (max-width:1050px) and (min-width:700px)
+{
+    .box{
+        height:35vh;
+    }
+}*/
